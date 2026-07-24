@@ -1,7 +1,9 @@
 //Custom card para mostrar la información
 
 //los imports que traen los componentes nativos de react native
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import styles from "../styles/globalStyles.js"
+
 
 /**https://retoolapi.dev/GH2Ivb/dataMovil
  * 
@@ -26,33 +28,3 @@ const CustomCard = ({ worker }) => {
 
 export default CustomCard;
 
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    padding: 20,
-    marginBottom: 20,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-  },
-  name: {
-    fontSize: 18,
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-  work: {
-    fontSize: 16,
-
-    marginBottom: 5,
-  },
-  work_since: {
-    fontSize: 14,
-    color: "#666",
-  },
-});
